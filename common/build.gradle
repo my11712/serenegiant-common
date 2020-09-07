@@ -48,28 +48,28 @@ dependencies {
 	implementation "androidx.recyclerview:recyclerview:${supportLibVersion}"
 	implementation "androidx.preference:preference:${supportLibVersion}"
 }
-
-def repo = new File(rootDir, "repository")
-
-apply plugin: 'maven'
-
-uploadArchives {
-	repositories {
-		mavenDeployer {
-            repository url: "file://${repo.absolutePath}"
-            pom.version = versionNameString
-            pom.groupId = 'com.serenegiant'
-            pom.artifactId = 'common'
-			pom.project {
-				inceptionYear '2014'
-				licenses {
-					license {
-						name 'The Apache Software License, Version 2.0'
-						url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-						distribution 'repo'
-					}
-				}
-			}
-        }
-    }
-}
+//
+//def repo = new File(rootDir, "repository")
+//
+//apply plugin: 'maven'
+//
+//uploadArchives {
+//	repositories {
+//		mavenDeployer {
+//            repository url: "file://${repo.absolutePath}"
+//            pom.version = versionNameString
+//            pom.groupId = 'com.serenegiant'
+//            pom.artifactId = 'common'
+//			pom.project {
+//				inceptionYear '2014'
+//				licenses {
+//					license {
+//						name 'The Apache Software License, Version 2.0'
+//						url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//						distribution 'repo'
+//					}
+//				}
+//			}
+//        }
+//    }
+//}
