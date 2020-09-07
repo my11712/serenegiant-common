@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="libcommon/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/common.iml" group="libcommon/common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/libcommon.iml" filepath="$PROJECT_DIR$/.idea/libcommon.iml" group="libcommon" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion versionCompiler
+   	buildToolsVersion versionBuildTool
+   	compileOptions {
+   		sourceCompatibility javaSourceCompatibility
+   		targetCompatibility javaTargetCompatibility
+   	}
+    defaultConfig {
+        applicationId "com.serenegiant.libcommon"
+        minSdkVersion 16
+        targetSdkVersion versionTarget
+        versionCode versionCodeNum
+        versionName versionNameString
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+	implementation fileTree(dir: 'libs', include: ['*.jar'])
+	implementation "androidx.legacy:legacy-support-v4:${supportLibVersion}"
+	implementation "androidx.appcompat:appcompat:${androidXVersion}"
+	implementation "androidx.recyclerview:recyclerview:${supportLibVersion}"
+	implementation "androidx.constraintlayout:constraintlayout:${constraintLibVersion}"
+
+	implementation project(':common')
+}
